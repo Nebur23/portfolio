@@ -76,7 +76,7 @@ const Header = () => {
   };
 
   return (
-    <div className='border-b py-2 border-border'>
+    <div className='border-b py-2 border-border fixed top-0 left-0 w-full bg-background z-50'>
       {/* Header */}
       <div className='flex justify-between items-center max-w-4xl mx-auto'>
         <SocilaLink />
@@ -145,22 +145,16 @@ const Header = () => {
                 >
                   Home
                 </a>
+
                 <a
-                  href='#'
-                  className='menu-item block text-4xl md:text-5xl font-medium text-gray-800 hover:text-cta transition-colors py-2'
-                  onClick={handleCloseMenu}
-                >
-                  About
-                </a>
-                <a
-                  href='#'
+                  href='#projects'
                   className='menu-item block text-4xl md:text-5xl font-medium text-gray-800 hover:text-cta transition-colors py-2'
                   onClick={handleCloseMenu}
                 >
                   Projects
                 </a>
                 <a
-                  href='#'
+                  href='#experiences'
                   className='menu-item block text-4xl md:text-5xl font-medium text-gray-800 hover:text-cta transition-colors py-2'
                   onClick={handleCloseMenu}
                 >

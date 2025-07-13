@@ -1,14 +1,16 @@
 import CurvedLoop from "../assets/animation/CurvedLoop";
 import RotatingText from "../assets/animation/RotatingText";
 import SplitText from "../assets/animation/SplitText";
+import AboutSection from "./about";
+//import heroImg from "../assets/images/hero-dev.png";
 
 export default function Hero() {
   // Play animation on menu icon click
 
   return (
-    <section className='min-h-screen flex items-center text-text justify-center px-4'>
+    <section className='min-h-screen flex flex-col items-center text-text justify-center px-4'>
       <div className='max-w-4xl mx-auto'>
-        <div className='flex justify-center items-center mb-4'>
+        <div className='flex justify-center items-center mt-4'>
           <SplitText
             text="Hi, I'm "
             className='text-4xl md:text-8xl font-playfair '
@@ -42,7 +44,7 @@ export default function Hero() {
           <span className='text-cta'>AI</span> Engineer
         </p>
         <CurvedLoop
-          marqueeText='Web 💻 | Mobile 📱| Blockchain 🌐⛓️ | Cloud ☁️'
+          marqueeText='Web 💻 | Mobile 📱| Blockchain 🌐⛓️ | Cloud ☁️ | ML 🤖 |'
           speed={5}
           curveAmount={100}
           direction='right'
@@ -50,6 +52,16 @@ export default function Hero() {
           className='text-text text-6xl font-grotesk lowercase font-thin'
         />
       </div>
+      {/* <div className='w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-border border-4 cursor-pointer transform-gpu'>
+        <img
+          //ref={imageRef}
+          src={heroImg}
+          alt='Developer at work'
+          className='w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110'
+          //onClick={handleImageClick}
+        />
+      </div> */}
+      <AboutSection />
     </section>
   );
 }
