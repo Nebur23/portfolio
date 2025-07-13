@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router";
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<HomePage />} />
+      <Route path='/portfolio' element={<HomePage />} />
     </Routes>
   );
 }
